@@ -1,207 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;500&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Paintings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
 
-:root {
-    --dark-bg: #222d3a;
-    --light-bg: #ffffff;
-    --dark-text: #222d3a;
-    --light-text: #ffffff;
-    --gray-text: #555555;
-}
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="posters.html">Posters</a>
+            <a href="paintings.html">Paintings</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <main class="container">
+        <section class="portfolio-section">
+            <h2>PAINTINGS</h2>
+            <p>I am a graphic designer and traditional painter dedicated to crafting high-quality visual experiences. My expertise lies in custom poster design and fine art painting. By combining a strong foundation in traditional artistic methods with modern graphic design principles, I deliver unique, eye-catching artwork tailored to the specific needs of my clients and audience.</p>
+            
+            <div class="grid-3">
+                <img src="images/painting1.jpg" alt="Painting 1">
+                <img src="images/painting2.jpg" alt="Painting 2">
+                <img src="images/painting3.jpg" alt="Painting 3">
+                <img src="images/painting4.jpg" alt="Painting 4">
+                <img src="images/painting5.jpg" alt="Painting 5">
+                <img src="images/painting6.jpg" alt="Painting 6">
+                <img src="images/painting7.jpg" alt="Painting 7">
+                <img src="images/painting8.jpg" alt="Painting 8">
+                <img src="images/painting9.jpg" alt="Painting 9">
+            </div>
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-size: 16px;
-    line-height: 1.6;
-}
+            <div class="btn-container">
+                <p class="call-to-action-text">Feel free to check out my portfolio below or reach out for collaborations!</p>
+                <a href="contact.html" class="btn btn-dark">Contact me!</a>
+            </div>
+        </section>
+    </main>
 
-/* Typography */
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: 2px;
-}
+    <footer>
+        <p>Anastasiia Snitchuk</p>
+        <p>s35313</p>
+    </footer>
 
-h1 {
-    font-size: 4.5rem;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 3.5rem;
-    margin-bottom: 1.5rem;
-}
-
-p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 2rem auto;
-    font-weight: 300;
-}
-
-/* Navigation */
-header {
-    padding: 2.5rem 0;
-    width: 100%;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-}
-
-nav a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1rem;
-    transition: opacity 0.3s ease;
-}
-
-nav a:hover {
-    opacity: 0.7;
-}
-
-/* Theme Classes */
-.dark-theme {
-    background-color: var(--dark-bg);
-    color: var(--light-text);
-}
-
-.light-theme {
-    background-color: var(--light-bg);
-    color: var(--dark-text);
-}
-
-/* Hero Section (Home) */
-.hero-wrapper {
-    background-color: var(--dark-bg);
-    color: var(--light-text);
-    min-height: 55vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Main Content Container */
-.container {
-    max-width: 1400px; 
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    width: 100%;
-}
-
-/* Grids */
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.grid-3 img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-}
-
-/* Buttons */
-.btn-container {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.call-to-action-text {
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 0.8rem 2.5rem;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
-
-.btn-dark {
-    background-color: var(--dark-bg);
-    color: var(--light-text);
-    border: 2px solid var(--dark-bg);
-}
-
-.btn-dark:hover {
-    background-color: var(--light-text);
-    color: var(--dark-bg);
-}
-
-.btn-light {
-    background-color: var(--light-bg);
-    color: var(--dark-text);
-    border: 2px solid var(--light-bg);
-}
-
-.btn-light:hover {
-    background-color: transparent;
-    color: var(--light-text);
-}
-
-/* Contact Page Specific */
-.contact-list {
-    list-style: none;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact-list li {
-    margin-bottom: 0.5rem;
-}
-
-.insta-mockup {
-    display: block;
-    max-width: 400px;
-    margin: 0 auto 2rem auto;
-    width: 100%;
-}
-
-/* Footer */
-footer {
-    padding: 2rem 5%;
-    margin-top: auto;
-    text-align: left;
-}
-
-footer p {
-    text-align: left;
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-@media (max-width: 900px) {
-    .grid-3 { grid-template-columns: repeat(2, 1fr); }
-    h1 { font-size: 3rem; }
-    h2 { font-size: 2.5rem; }
-    nav { gap: 1.5rem; flex-wrap: wrap; }
-}
-
-@media (max-width: 600px) {
-    .grid-3 { grid-template-columns: 1fr; }
-}
+</body>
+</html>
